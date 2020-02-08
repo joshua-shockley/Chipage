@@ -7,39 +7,29 @@ import "./App.css";
 import Navlinks from "./components/Navlinks.js";
 import Home from "./components/Home.js";
 import Contact from "./components/Contact.js";
+import Footer from "./components/Footer.js";
+import NavbarContent from "./components/NavbarContent";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>this is in the header</p>
+        <p className="header-title">this is in the header title</p>
       </header>
       <section className="main-content">
         <div className="container-left">
-          <p>
-            this should be on the left with majority of the content. ipsum Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Ducimus, vel
-            pariatur perferendis quas quos repudiandae ullam sint neque
-            reiciendis. Exercitationem sed quia laudantium doloribus dolorem
-            dolor nulla neque illo mollitia.
-          </p>
-          {/* <Home/>
-          <Contact/> */}
+          <Home />
+          <Contact />
         </div>
         <div className="container-right">
           <Navlinks />
-          <div>
-            <p>here is more shit below the navlinks</p>
-          </div>
-          <div>
-            <p>
-              more shit like links to favorite articles or blogs or local events
-              or blah...blah...blah...
-            </p>
-          </div>
+          <NavbarContent />
         </div>
       </section>
-      <footer>this is the foooter of the page</footer>
+      <footer>
+        <Footer />
+        {/* //this is the footer.. needs to be setup cleaner */}
+      </footer>
     </div>
   );
 }
