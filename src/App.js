@@ -1,5 +1,7 @@
 // this top section is for main library imports
 import React from "react";
+import { Route, Switch } from "react-router-dom";
+
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -18,15 +20,15 @@ function App() {
       </header>
       <section className="main-content">
         <div className="container-left">
-          <Home />
-          <Contact />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/contact" component={Contact} />
         </div>
         <div className="container-right">
           <Navlinks />
           <NavbarContent />
         </div>
       </section>
-      <footer>
+      <footer className="bottom">
         <Footer />
         {/* //this is the footer.. needs to be setup cleaner */}
       </footer>

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Navlinks() {
   return (
@@ -8,34 +9,35 @@ export default function Navlinks() {
       </div>
       <ul className="menu-links">
         <li>
+          <NavLink exact to="/">
+            main page...
+          </NavLink>
+        </li>
+        <li>
           <button>
-            <a href="" />
-            menu item 1
+            <NavLink exact to="#">
+              menu item 2
+            </NavLink>
           </button>
         </li>
         <li>
           <button>
-            <a href="" />
-            menu item 2
+            <NavLink exact to="#">
+              menu item 3
+            </NavLink>
           </button>
         </li>
         <li>
           <button>
-            <a href="" />
-            menu item 3
+            <NavLink exact to="#">
+              menu item 4
+            </NavLink>
           </button>
         </li>
         <li>
-          <button>
-            <a href="" />
-            menu item 4
-          </button>
-        </li>
-        <li>
-          <button>
-            <a href="" />
-            menu item 5
-          </button>
+          <NavLink exact to="/contact">
+            Contact Me
+          </NavLink>
         </li>
       </ul>
       this is the navlinks tha should show up on the right and not move...
