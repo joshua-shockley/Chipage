@@ -9,33 +9,27 @@ export default function Navlinks() {
       </div>
       <ul className="menu-links">
         <li>
-          <NavLink exact to="/">
+          <NavLink exact to="/" className="navlink">
             main page...
           </NavLink>
         </li>
         <li>
-          <button>
-            <NavLink exact to="#">
-              menu item 2
-            </NavLink>
-          </button>
+          <NavLink exact to="#" className="navlink">
+            menu item 2
+          </NavLink>
         </li>
         <li>
-          <button>
-            <NavLink exact to="#">
-              menu item 3
-            </NavLink>
-          </button>
+          <NavLink exact to="#" className="navlink">
+            menu item 3
+          </NavLink>
         </li>
         <li>
-          <button>
-            <NavLink exact to="#">
-              menu item 4
-            </NavLink>
-          </button>
+          <NavLink exact to="#" className="navlink">
+            menu item 4
+          </NavLink>
         </li>
         <li>
-          <NavLink exact to="/contact">
+          <NavLink exact to="/contact" className="navlink">
             Contact Me
           </NavLink>
         </li>
