@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function Navlinks() {
+  const [today, setToday] = useState('');
+  let date = '';
+  useEffect(() => {
+    const d = new Date();
+    const n = d.toDateString();
+    // console.log("today", n)
+    return setToday(n);
+
+  }, [])
+
+
   return (
     <div>
       <div className="navbarIcon">
         <p> image of apple on books</p>
+      </div>
+      <div>
+        {today}
       </div>
       <ul className="menu-links">
         <li>

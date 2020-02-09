@@ -31,12 +31,12 @@ export default function ConForm() {
     return (
         <fieldset>
             <form onSubmit={event => handleSubmit(event)}>
-                <input type='text' placeholder="Email" name="email" onChange={event => handleEmailChange(event)} />
-                <input type="textarea" placeholder="message" name="message" onChange={event => handleMessageChange(event)} />
-                <input type="submit" />
+                <input className="ls-result email" type='text' placeholder="Email" name="email" onChange={event => handleEmailChange(event)} />
+                <input className="ls-result  message" type="textarea" placeholder="Message" name="message" onChange={event => handleMessageChange(event)} />
+                <input className="ls-result sButton" type="submit" />
             </form>
-            <div>email: {localStorage.getItem('theInfo')}</div>
-            <div>message: {localStorage.getItem('message')}</div>
+            <div className="ls-result">email: {localStorage.getItem('theInfo')}</div>
+            <div className="ls-result">message: {localStorage.getItem('message')}</div>
         </fieldset>
 
     )

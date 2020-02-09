@@ -89,3 +89,12 @@ div.navbarIcon {
     /* background-image: ; */
     height: 90px;
 }
+
+.ls-result{
+    display:flex;
+    margin: 8px;
+}
+
+.email, .message{
+    
+}
