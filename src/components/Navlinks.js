@@ -15,12 +15,12 @@ export default function Navlinks() {
         </li>
         <li>
           <NavLink exact to="#" className="navlink">
-            menu item 2
+            blog section-not up yet
           </NavLink>
         </li>
         <li>
           <NavLink exact to="#" className="navlink">
-            menu item 3
+            possible personal store link
           </NavLink>
         </li>
         <li>
