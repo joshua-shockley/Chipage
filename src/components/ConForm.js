@@ -22,12 +22,8 @@ export default function ConForm() {
     };
 
     useEffect(() => {
-        const theMail = localStorage.getItem('theInfo');
-        const theMess = localStorage.getItem('message');
-        return (res) => {
-            return res
-        };
     }, []);
+
     return (
         <fieldset>
             <form onSubmit={event => handleSubmit(event)}>
@@ -35,8 +31,14 @@ export default function ConForm() {
                 <input className="ls-result  message" type="textarea" placeholder="Message" name="message" onChange={event => handleMessageChange(event)} />
                 <input className="ls-result sButton" type="submit" />
             </form>
-            <div className="ls-result">email: {localStorage.getItem('theInfo')}</div>
-            <div className="ls-result">message: {localStorage.getItem('message')}</div>
+            {!localStorage.getItem('theInfo') && !localStorage.getItem('message') ?
+                <div>Submit An Email & Message. See It On The Screen to see what was saved...</div>
+                :
+                <>
+                    <div className="ls-result">email: {localStorage.getItem('theInfo')}</div>
+                    <div className="ls-result">message: {localStorage.getItem('message')}</div>
+                </>
+            }
         </fieldset>
 
     )
