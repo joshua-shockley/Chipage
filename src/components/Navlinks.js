@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import apple from '../images/element5-digital-OyCl7Y4y0Bk-unsplash.jpg';
 
 export default function Navlinks() {
   const [today, setToday] = useState('');
@@ -16,9 +17,9 @@ export default function Navlinks() {
   return (
     <div>
       <div className="navbarIcon">
-        <p> image of apple on books</p>
+        <img className="apple" src={apple} />
       </div>
-      <div>
+      <div className="theDate">
         {today}
       </div>
       <ul className="menu-links">
@@ -28,13 +29,13 @@ export default function Navlinks() {
           </NavLink>
         </li>
         <li>
-          <NavLink exact to="#" className="navlink">
-            blog section-not up yet
+          <NavLink exact to="/blog" className="navlink">
+            blog
           </NavLink>
         </li>
         <li>
           <NavLink exact to="#" className="navlink">
-            possible personal store link
+            Other Links
           </NavLink>
         </li>
         <li>

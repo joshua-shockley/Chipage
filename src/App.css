@@ -1,10 +1,17 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 li {
     margin: 20px auto;
-    height: 50px;
+    height: 60px;
     list-style-type: none;
     background-color: white;
     margin-right: 15px;
-    border-radius: 20px;
+    border: 2px solid rgb(212, 235, 232);
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a {
@@ -14,10 +21,13 @@ a {
 img {
     width: 30px;
 }
-
+img.apple{
+    width:100%;
+}
 .logo-text {
     display: flex;
     align-self: center;
+
 }
 
 .little-box {
@@ -28,7 +38,7 @@ img {
 .navlink {
     display: flex;
     justify-content: center;
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.5rem;
     margin: 0 auto;
@@ -45,15 +55,15 @@ footer {
 }
 
 .App-header {
-    background-color: rgb(40, 155, 143);
+    background-color: rgb(245, 240, 240);
     min-height: 5vh;
-    width: 100%;
+    width: 75%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: black;
     position: fixed;
 }
 
@@ -76,18 +86,20 @@ div.container-left {
 }
 
 div.container-right {
-    background-color: rgb(40, 155, 143);
     width: 25%;
     height: 100vh;
     position: fixed;
     right: 0px;
     margin: 0 auto;
-    padding-top: 5px;
 }
 
 div.navbarIcon {
     /* background-image: ; */
     height: 90px;
+
+}
+div.theDate {
+    margin-top: 100px;
 }
 
 .ls-result{
@@ -95,6 +107,6 @@ div.navbarIcon {
     margin: 8px;
 }
 
-.email, .message{
+/* .email, .message{
     
-}
+} */
